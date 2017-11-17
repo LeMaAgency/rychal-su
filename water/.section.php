@@ -1,0 +1,6 @@
+<?
+$sSectionName = "Вода";
+$arDirProperties = Array(
+
+);
+?>

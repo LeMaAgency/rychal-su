@@ -1,0 +1,165 @@
+.about {
+    .header {
+
+        &:after {
+            display: none;
+        }
+    }
+    .header-preview {
+        margin-bottom: 0;
+    }
+
+}
+
+.bread-crumbs {
+    color: #ffffff;
+    font-weight: 300;
+    ul {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    li {
+        display: inline-block;
+        padding-right: 15px;
+        line-height: 1;
+        &:not(:first-of-type):before {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            border-radius: 50%;
+            width: 6px;
+            height: 6px;
+            background-color: #d0b443;
+            margin-right: 7px;
+
+        }
+    }
+    span {
+        vertical-align: middle;
+    }
+    a {
+        color: #ffffff;
+        font-weight: lighter;
+        vertical-align: middle;
+        &:hover {
+            color: #d0b443;
+            text-decoration: underline;
+        }
+    }
+}
+
+.h2 {
+    text-align: center;
+    color: #046a38;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 40px;
+    margin: 118px auto 75px;
+}
+
+.about-descriptions {
+    min-height: 755px;
+    background: url('../images/bg-text-about.png') no-repeat top;
+    background-size: cover;
+    font-size: 22px;
+    line-height: 36px;
+    &__text {
+        margin-bottom: 35px;
+    }
+}
+
+.about-history {
+    padding-bottom: 15px;
+    &__item {
+        &__description-wrap {
+            padding: 30px 0;
+            text-align: center;
+        }
+        &__img {
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+            img {
+                width: 100%;
+                min-width: 1920px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+        &__year {
+            width: 35%;
+            max-width: 100%;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+            display: inline-block;
+            vertical-align: middle;
+            &__round {
+                display: inline-block;
+                width: 151px;
+                height: 151px;
+                padding: 8px;
+                border-radius: 50%;
+                box-shadow: 0 0 18px rgba(0, 0, 0, 0.13);
+                background-color: #faf9f7;
+                &_inn {
+                    width: 136px;
+                    height: 136px;
+                    border-radius: 50%;
+                    border: 1px solid #d0b443;
+                    background-image: linear-gradient(to top, #046a38 0%, #10a844 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    color: #046a38;
+                    font-size: 51px;
+                    line-height: 2.7;
+                }
+            }
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                z-index: -1;
+                top: 50%;
+                background-color: #d0b443;
+            }
+            &:before {
+                top: 50%;
+                left: 0;
+                right: 0;
+                width: 100%;
+                height: 1px;
+            }
+            &:after {
+                right: 0;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                transform: translateY(-50%);
+            }
+            @media only screen and(max-width: 991px) {
+                width: 397px;
+            }
+        }
+        &__text {
+            display: inline-block;
+            vertical-align: middle;
+            color: #0a893e;
+            font-size: 25px;
+            margin: 10px 0 10px 50px;
+            text-align: left;
+            width: 60%;
+            @media only screen and(max-width: 1199px) {
+                width: 55%;
+            }
+            @media only screen and(max-width: 991px) {
+                width: 100%;
+                margin-left: 0;
+                text-align: center;
+            }
+        }
+    }
+}
