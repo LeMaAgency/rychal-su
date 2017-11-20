@@ -7,8 +7,8 @@ use \WM\Common\Helper;
 $form = new \WM\Forms\AjaxForm();
 $form
     ->setRules(array(
-        array('phone', 'required', array('message' => ' ')),
-        array('phone', 'phone', array('message' => ' ')),
+        array('phone', 'required', array('message' => 'Телефон обязателен к заполненеию')),
+        array('phone', 'phone', array('message' => 'Телефон дожен быть в формате +7 (988) 888-88-88')),
     ))
     ->setFields($_POST);
 
