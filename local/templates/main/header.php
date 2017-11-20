@@ -22,6 +22,7 @@ Loc::loadMessages(__FILE__);
             '/assets/css/style.css',
             '/assets/css/font-awesome-4.7.0/css/font-awesome.min.css',
             '/assets/css/jquery.fancybox.min.css',
+            '/assets/css/about.css'
         ))
         ->init(array('fx'))
         ->addJsArray(array(
