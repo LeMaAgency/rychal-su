@@ -7,13 +7,17 @@
             <h3 class="footer-title"><?\WM\Components\IncludeArea::inc('', array('PATH' => SITE_DIR . 'include/footer-feedback-form/title.php'));?></h3>
             <p class="footer-title-text"><?\WM\Components\IncludeArea::inc('', array('PATH' => SITE_DIR . 'include/footer-feedback-form/slogan.php'));?></p>
             <form class="footer-form feedback-form" method="post" action="/ajax/feedback-order-form.php" class="feedback-form">
-                    <div class="footer-form-item footer-form-phone form-group">
-                        <input id="phone" class="footer-form-phone-input" type="text" name="phone" placeholder="Введите ваш номер телефона:">
-                        <div class="item-error"></div>
-                    </div>
-                <div class="footer-form-item">
-                    <input class="footer-form-callback" type="submit" value="Заказать обратный звонок">
+                <div class="footer-form-item footer-form-phone form-group">
+                    <input id="phone" class="footer-form-phone-input" type="text" name="phone" placeholder="Введите ваш номер телефона:">
+                    <div class="item-error"></div>
                 </div>
+                <div class="footer-form-item">
+                    <input class="footer-form-callback form__personal__switch" type="submit" value="Заказать обратный звонок">
+                </div>
+                <div class="checkbox">
+                <input id="checkbox1" type="checkbox" data-js-core-switch-element='form__personal__switch'>
+                <label for="checkbox1">Я согласен на обработку персональных данных</label>
+            </div>
             </form>
             <p class="footer-callback-text"><?\WM\Components\IncludeArea::inc('', array('PATH' => SITE_DIR . 'include/footer-feedback-form/info.php'));?></p>
         </div>
@@ -56,5 +60,20 @@
         </div>
     </div>
 </footer>
+<div id="form_f">
+<form class="footer-form feedback-form" method="post" action="/ajax/feedback-order-form.php" class="feedback-form" >
+    <div class="footer-form-item footer-form-phone form-group">
+        <input id="phone" class="footer-form-phone-input" type="text" name="phone" placeholder="Введите ваш номер телефона:">
+        <div class="item-error"></div>
+    </div>
+    <div class="footer-form-item">
+            <input class="footer-form-callback form__personal__switch2" type="submit" value="Заказать обратный звонок">
+    </div>
+        <div class="checkbox">
+    <input id="checkbox1" type="checkbox" data-js-core-switch-element='form__personal__switch2'>
+        <label for="checkbox1">Я согласен на обработку персональных данных</label>
+    </div>
+</form>
+</div>
 </body>
 </html>

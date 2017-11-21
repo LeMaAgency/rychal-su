@@ -46,7 +46,7 @@ Loc::loadMessages(__FILE__);
     <div class="container">
         <div class="header-contacts">
             <?\WM\Components\IncludeArea::inc('', array('PATH' => SITE_DIR . 'include/header-phone.php')); ?>
-            <a class="header-call-btn"><?=Loc::getMessage('HEADER_ORDER_CALL');?></a>
+            <a class="header-call-btn" data-fancybox href="#form_f"><?=Loc::getMessage('HEADER_ORDER_CALL');?></a>
         </div>
     </div>
     <nav class="navbar navbar-default" role="navigation">

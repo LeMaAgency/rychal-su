@@ -20,4 +20,60 @@
 
 $(document).ready(function () {
     $("[data-maarv='animated']").maarvAnimated();
+    coreJsSwitchElement.init();
+
 });
+
+var coreJsSwitchElement = {
+    init: function () {
+        // Переменные
+        // ...
+        this.$arElements = $('[data-js-core-switch-element]'),
+        //...
+        this.load();
+    },
+    load: function () {
+        // Обработка DATA
+        this.$arElements.each(function () {
+            var $this = $(this),
+                $name = $this.data('js-core-switch-element'),
+                $text = $this.text();
+            $textSwitch = $this.data('js-core-switch-element-text')
+
+            $this.data({
+                status:      false,
+                element:     $('.' + $name),
+                text:        $text,
+                textSwitch:  $textSwitch
+            });
+        });
+        this.activation();
+        this.onStatus();
+    },
+    activation: function() {
+        this.$arElements.each(function () {
+            var $this = $(this);
+            $($this).on('click', function(){
+                $this.data('element').toggleClass('active');
+
+                if(!!$this.data('textSwitch') && $this.data('element').hasClass('active')){
+                    $this.text($this.data('textSwitch'));
+                    $this.data('status') == true;
+                }else {
+                    $this.text($this.data('text'));
+                    $this.data('status') == false;
+                }
+            });            
+        });
+    },
+    onStatus: function(){
+        this.$arElements.each(function () {
+            var $this = $(this);
+            $($this.data('element')).on('click', function(e){
+                if(!$(this).hasClass('active')) {
+                    e.preventDefault();
+                }
+            });
+        });
+    }
+};
