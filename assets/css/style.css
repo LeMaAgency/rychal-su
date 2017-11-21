@@ -64,6 +64,10 @@ body {
     }
 }
 
+a:active,
+a:focus {
+    color: inherit;
+}
 
 
 
@@ -185,6 +189,11 @@ body {
     background-image: url(../images/phone.png);
     background-position: center;
     background-repeat: no-repeat;
+}
+.header-phone:hover,
+.header-phone:focus
+ {
+    color: #fff;
 }
 
 .header-preview {
