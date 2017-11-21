@@ -828,6 +828,7 @@ body {
 .footer-form-phone {
     position: relative;
     margin-right: 33px;
+    vertical-align: top;
 }
 
 .footer-form-phone::before {
@@ -843,6 +844,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+.item-error {margin-top: 10px}
 
 .footer-form input[type="text"] {
     color: #999999;
@@ -1265,7 +1267,8 @@ body {
         left: 9px;
     }
 
-    .footer-form input[type="text"] {
+    .footer-form input[type="text"],
+    .item-error {
         width: 266px;
     }
 
