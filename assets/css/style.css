@@ -948,9 +948,6 @@ body {
     opacity: 1;
 }
 
-//
-// АССОРТИМЕНТ
-//
 .content {}
 
 .content #tabs {
@@ -1452,6 +1449,16 @@ body {
     background-size: 100%;
     padding-top: 900px;
     margin-bottom: 100px;
+}
+
+@media (min-width: 1600px) {
+    .page__about__water__inf__list {
+        padding-bottom: 200px; 
+    }
+    .page__about__water__block_5 {
+        padding-top: 1100px;
+
+    }
 }
 
 @media (max-width: 1100px) {
