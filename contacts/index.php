@@ -8,10 +8,29 @@ $APPLICATION->SetTitle("Контакты");
         <div class="container">
             <div class="page__contact__text">
                 <p>
-                    ООО «Воды РЫЧАЛ-СУ» в Москве
+                    <? $APPLICATION->IncludeFile(
+                        SITE_DIR."include/contacts/name_of_company.php"
+                    ); ?>
                 </p>
-                <p>Телефон: <a href="tel:+78003334410" title="">+7 (800) 333-4410</a></p>
-                <p>Email: <a href="mailto:info@rychal-su.ru" title="">info@rychal-su.ru</a></p>
+                <p><? $APPLICATION->IncludeFile(
+                        SITE_DIR."include/contacts/label_phone.php"
+                    ); ?>
+                    <a href="tel:+78003334410" title="">
+                        <? $APPLICATION->IncludeFile(
+                            SITE_DIR."include/contacts/phone_number.php"
+                        ); ?>
+                    </a>
+                </p>
+                <p>
+                    <? $APPLICATION->IncludeFile(
+                        SITE_DIR."include/contacts/label_email.php"
+                    ); ?>
+                    <a href="mailto:info@rychal-su.ru" title="">
+                        <? $APPLICATION->IncludeFile(
+                            SITE_DIR."include/contacts/email.php"
+                        ); ?>
+                    </a>
+                </p>
             </div>
             <div class="page__contact__img">
                 <img src="/assets/images/page__contact/water.png" alt="">
