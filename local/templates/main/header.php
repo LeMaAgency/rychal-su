@@ -61,19 +61,19 @@ Loc::loadMessages(__FILE__);
                 </button>
             </div>
             <div class="container">
-                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                    <ul class="nav navbar-nav">
+                <div class="collapse navbar-collapse headert__menu" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav headert__menu_l">
                         <li><a href="#">О компании</a></li>
                         <li><a href="#">Вода</a></li>
-                        <li class="hidden-xs">
-                            <? if ($APPLICATION->GetCurDir() == SITE_DIR): ?>
+                    </ul>
+                    <div class="hidden-xs headert__logo">
+                        <? if ($APPLICATION->GetCurDir() == SITE_DIR): ?>
                             <span class="navbar-brand"><img class="navbar-logo" src="/assets/images/logo.png" alt="Главная"></span>
-                        </li>
                         <? else: ?>
                             <a class="navbar-brand" href="/"><img class="navbar-logo" src="/assets/images/logo.png" alt="На главную"></a>
                         <? endif; ?>
-                        </li>
-
+                    </div>
+                    <ul class="nav navbar-nav headert__menu_r">
                         <li><a href="/products.html">Продукция</a></li>
                         <li><a href="#">Контакты</a></li>
                     </ul>
