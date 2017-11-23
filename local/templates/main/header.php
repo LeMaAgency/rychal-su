@@ -61,22 +61,48 @@ Loc::loadMessages(__FILE__);
                 </button>
             </div>
             <div class="container">
-                <?$APPLICATION->IncludeComponent("bitrix:menu", "main_menu", Array(
-                    "ALLOW_MULTI_SELECT" => "N",	// Разрешить несколько активных пунктов одновременно
-                    "CHILD_MENU_TYPE" => "left",	// Тип меню для остальных уровней
-                    "DELAY" => "N",	// Откладывать выполнение шаблона меню
-                    "MAX_LEVEL" => "1",	// Уровень вложенности меню
-                    "MENU_CACHE_GET_VARS" => array(	// Значимые переменные запроса
-                        0 => "",
-                    ),
-                    "MENU_CACHE_TIME" => "3600",	// Время кеширования (сек.)
-                    "MENU_CACHE_TYPE" => "N",	// Тип кеширования
-                    "MENU_CACHE_USE_GROUPS" => "Y",	// Учитывать права доступа
-                    "ROOT_MENU_TYPE" => "top",	// Тип меню для первого уровня
-                    "USE_EXT" => "N",	// Подключать файлы с именами вида .тип_меню.menu_ext.php
-                ),
-                    false
-                );?>
+                <div class="collapse navbar-collapse headert__menu" id="bs-example-navbar-collapse-1">
+                    <?$APPLICATION->IncludeComponent(
+                        "bitrix:menu",
+                        "main_menu_left",
+                        Array(
+                            "ALLOW_MULTI_SELECT" => "N",
+                            "CHILD_MENU_TYPE" => "left",
+                            "COMPONENT_TEMPLATE" => "main_menu_left",
+                            "DELAY" => "N",
+                            "MAX_LEVEL" => "1",
+                            "MENU_CACHE_GET_VARS" => array(),
+                            "MENU_CACHE_TIME" => "3600",
+                            "MENU_CACHE_TYPE" => "N",
+                            "MENU_CACHE_USE_GROUPS" => "Y",
+                            "ROOT_MENU_TYPE" => "top_left",
+                            "USE_EXT" => "N"
+                        )
+                    );?>
+                    <div class="hidden-xs headert__logo">
+                        <? if ($APPLICATION->GetCurDir() == SITE_DIR): ?>
+                            <span class="navbar-brand"><img class="navbar-logo" src="/assets/images/logo.png" alt="Главная"></span>
+                        <? else: ?>
+                            <a class="navbar-brand" href="<?=SITE_DIR?>"><img class="navbar-logo" src="/assets/images/logo.png" alt="На главную"></a>
+                        <? endif; ?>
+                    </div>
+                    <?$APPLICATION->IncludeComponent(
+                        "bitrix:menu",
+                        "main_menu_right",
+                        Array(
+                            "ALLOW_MULTI_SELECT" => "N",
+                            "CHILD_MENU_TYPE" => "left",
+                            "DELAY" => "N",
+                            "MAX_LEVEL" => "1",
+                            "MENU_CACHE_GET_VARS" => array(""),
+                            "MENU_CACHE_TIME" => "3600",
+                            "MENU_CACHE_TYPE" => "N",
+                            "MENU_CACHE_USE_GROUPS" => "Y",
+                            "ROOT_MENU_TYPE" => "top_right",
+                            "USE_EXT" => "N"
+                        )
+                    );?>
+                </div>
             </div>
         </div>
     </nav>
