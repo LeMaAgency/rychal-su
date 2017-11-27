@@ -28,7 +28,7 @@ var coreJsSwitchElement = {
     init: function () {
         // Переменные
         // ...
-        this.$arElements = $('[data-js-core-switch-element]'),
+        this.$arElements = $('[data-js-core-switch-element]')
         //...
         this.load();
     },
@@ -56,12 +56,20 @@ var coreJsSwitchElement = {
             $($this).on('click', function(){
                 $this.data('element').toggleClass('active');
 
-                if(!!$this.data('textSwitch') && $this.data('element').hasClass('active')){
+                if($this.data('element').hasClass('active')){
                     $this.text($this.data('textSwitch'));
-                    $this.data('status') == true;
+                    $this.data().status = true;
                 }else {
                     $this.text($this.data('text'));
-                    $this.data('status') == false;
+                    $this.data().status = false;
+                }
+
+
+                console.log($this.data('status'));
+                if($this.data('status') !== true) {
+                    $this.parent().removeClass('error');
+                }else{
+                    $this.parent().addClass('error');
                 }
             });            
         });
@@ -72,6 +80,9 @@ var coreJsSwitchElement = {
             $($this.data('element')).on('click', function(e){
                 if(!$(this).hasClass('active')) {
                     e.preventDefault();
+                    $this.parent().addClass('error');
+                }else{
+                    $this.parent().removeClass('error');
                 }
             });
         });

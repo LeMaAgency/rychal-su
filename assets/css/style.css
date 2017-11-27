@@ -1515,7 +1515,7 @@ a:focus {
     right: 200px;
 }
 .page__contact__img img {
-    width: 210px;
+    width: 490px;
 
     animation-duration: 1s;
     animation-fill-mode: both;
@@ -1611,4 +1611,14 @@ a:focus {
     .headert__logo {
         margin-left: -70px;
     }
+}
+
+.checkbox label, .radio label {
+    padding-left: 0;
+    margin-left: 20px;
+}
+
+
+.checkbox.error label {
+    border-bottom: 2px solid red;
 }

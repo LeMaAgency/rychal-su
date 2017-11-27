@@ -15,11 +15,12 @@
                     <input class="footer-form-callback form__personal__switch" type="submit" value="Заказать обратный звонок">
                 </div>
                 <div class="checkbox">
-                <input id="checkbox1" type="checkbox" data-js-core-switch-element='form__personal__switch'>
+                <input id="checkbox1" type="checkbox" data-js-core-switch-element='form__personal__switch' class="checkbox__control">
                 <label for="checkbox1">Я согласен на обработку персональных данных</label>
             </div>
+                <p class="footer-callback-text"><?\WM\Components\IncludeArea::inc('', array('PATH' => SITE_DIR . 'include/footer-feedback-form/info.php'));?></p>
             </form>
-            <p class="footer-callback-text"><?\WM\Components\IncludeArea::inc('', array('PATH' => SITE_DIR . 'include/footer-feedback-form/info.php'));?></p>
+           <br><br>
         </div>
         <div class="footer-item clearfix">
             <div class="footer-item-contacts hidden-xs col-sm-7 col-md-7 col-lg-7">
@@ -70,7 +71,7 @@
             <input class="footer-form-callback form__personal__switch2" type="submit" value="Заказать обратный звонок">
     </div>
         <div class="checkbox">
-    <input id="checkbox1" type="checkbox" data-js-core-switch-element='form__personal__switch2'>
+    <input id="checkbox1" type="checkbox" data-js-core-switch-element='form__personal__switch2' class="checkbox__control">
         <label for="checkbox1">Я согласен на обработку персональных данных</label>
     </div>
 </form>
