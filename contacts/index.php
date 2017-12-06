@@ -29,7 +29,8 @@ $APPLICATION->SetTitle("Контакты");
                         <? $APPLICATION->IncludeFile(
                             SITE_DIR."include/contacts/email.php"
                         ); ?>
-                    </a>
+                    </a><br>
+                    <b>Адрес производства: Россия, <br> Дагестан, Касумкент,  Ленина, 115</b>
                 </p>
             </div>
             <div class="page__contact__img">

@@ -1500,7 +1500,7 @@ a:focus {
     position: relative;
     min-height: 600px;
     margin-bottom: -30px;
-    background-image: url('/assets/css/../images/page__contact/bg.jpg');
+    background-image: url('/assets/css/../images/page__contact/bg.png');
     background-size: cover;
     background-position: center bottom;
     /*background-repeat: no-repeat;*/
@@ -1510,7 +1510,7 @@ a:focus {
 .page__contact .container {position: relative}
 .page__contact__text {
     color: #fff;
-    padding: 250px 0;
+    padding: 280px 0 220px;
     font-size: 25px;
 }
 .page__contact__text a {
@@ -1519,7 +1519,7 @@ a:focus {
 }
 .page__contact__img {
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     right: 200px;
 }
 .page__contact__img img {
@@ -1555,8 +1555,12 @@ a:focus {
         min-height: auto;
     }
     .page__contact__text {
+        color: #000000;
         padding: 30px 0;
         text-align: center;
+    }
+    .page__contact__text a {
+        color: #000000;
     }
     .page__contact__img {
         position: relative;
