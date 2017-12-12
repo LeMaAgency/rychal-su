@@ -313,11 +313,13 @@ a:focus {
 }
 
 .features-item-wrap {
+    position: absolute;
+    top: 82px;
     display: none;
     width: 100%;
     height: auto;
-    position: relative;
-    top: -146px;
+    /*position: relative;*/
+    /*top: -146px;*/
     padding: 30px;
     background-image: url("../images/drop-text.png");
     background-repeat: no-repeat;
@@ -331,6 +333,16 @@ a:focus {
 
 .features-item-wrapper {
     height: 350px;
+}
+
+.features-items .features-item {
+    position: relative;
+}
+.features-items .features-item:first-child {
+    z-index: 11;
+}
+.features-items .features-item:last-child {
+    z-index: 10;
 }
 
 @media (max-width: 800px) {
