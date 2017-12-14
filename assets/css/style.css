@@ -1512,7 +1512,8 @@ a:focus {
     position: relative;
     min-height: 600px;
     margin-bottom: -30px;
-    background-image: url('/assets/css/../images/page__contact/bg.png');
+    color: #666666;
+    /*background-image: url('/assets/css/../images/page__contact/bg.png');*/
     background-size: cover;
     background-position: center bottom;
     /*background-repeat: no-repeat;*/
@@ -1521,12 +1522,12 @@ a:focus {
 }
 .page__contact .container {position: relative}
 .page__contact__text {
-    color: #fff;
+    color: #666666;
     padding: 280px 0 220px;
     font-size: 25px;
 }
 .page__contact__text a {
-    color: #fff;
+    /*color: #fff;*/
     text-decoration: underline;
 }
 .page__contact__img {
