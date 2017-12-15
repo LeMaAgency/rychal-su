@@ -1,8 +1,8 @@
 <?
 $aMenuLinks = Array(
 	Array(
-		"Вода", 
-		"/water/", 
+		"О воде", 
+		"#", 
 		Array(), 
 		Array(), 
 		"" 
