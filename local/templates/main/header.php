@@ -42,7 +42,7 @@ Loc::loadMessages(__FILE__);
 <body>
 <?=$APPLICATION->ShowPanel();?>
 
-<header class="header">
+<header class="header header_bored-none">
     <div class="container">
         <div class="header-contacts">
             <?\WM\Components\IncludeArea::inc('', array('PATH' => SITE_DIR . 'include/header-phone.php')); ?>

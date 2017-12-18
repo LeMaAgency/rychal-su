@@ -57,6 +57,9 @@ body {
     border-radius: 100% / 60px;
     background-color: white;
 }
+.header_bored-none:after {
+    display: none!important;
+}
 
 @media (max-width: 1500px) {
     .header {
@@ -1513,7 +1516,7 @@ a:focus {
     min-height: 600px;
     margin-bottom: -30px;
     color: #666666;
-    /*background-image: url('/assets/css/../images/page__contact/bg.png');*/
+    background-image: url('/assets/images/page__contact/foto-bg.jpg');
     background-size: cover;
     background-position: center bottom;
     /*background-repeat: no-repeat;*/
@@ -1521,14 +1524,64 @@ a:focus {
     /*box-shadow: inset 0 0 30px 22px #fff;*/
 }
 .page__contact .container {position: relative}
+.page__contact__wrap {
+    display: block;
+    max-width: 450px;
+    background: rgba(255, 255, 255, 0.77);
+    padding: 20px;
+    margin: 200px auto;
+    border-radius: 4px;
+}
+.page__contact__wrap__border {
+    padding: 25px;
+    border: 2px solid #d0b443;
+    display: block;
+    border-radius: 4px;
+    text-align: center;
+}
+@media (max-width: 1000px) {
+    .page__contact__wrap {
+        margin: auto;
+    }
+}
 .page__contact__text {
     color: #666666;
-    padding: 280px 0 220px;
-    font-size: 25px;
+    padding: 0;
+    font-size: 20px;
 }
 .page__contact__text a {
     /*color: #fff;*/
     text-decoration: underline;
+}
+.page__contact__text__title {
+    color: #d0b443;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.page__contact__text__phone,
+.page__contact__text__mail {
+    display: inline-block;
+    text-align: left;
+    padding: 10px 10px 10px 40px;
+    color: #046a38!important;
+    font-weight: bold;
+    text-decoration: none!important;
+}
+.page__contact__text__phone {
+    background: url('/assets/images/page__contact/icon-phone.png') no-repeat left;
+}
+.page__contact__text__mail {
+    background: url('/assets/images/page__contact/icon-mail.png') no-repeat left;
+}
+.page__contact__text__line {
+    max-width: 190px;
+    margin: 25px auto 0;
+    border-bottom: 2px solid #d0b443;
+}
+.page__contact__text__green {
+    color: #046a38;
+    font-weight: bold;
+    font-size: 20px;
 }
 .page__contact__img {
     position: absolute;
