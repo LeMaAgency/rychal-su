@@ -9,7 +9,10 @@ $APPLICATION->SetTitle("Контакты");
             <div class="page__contact__wrap">
                 <div class="page__contact__wrap__border">
                     <div class="page__contact__text">
-                        <div class="page__contact__text__title">ООО Завод минеральных вод<b>«Рычал-Су»</b></div>
+                        <div class="page__contact__text__title">
+                            <? $APPLICATION->IncludeFile(
+                                SITE_DIR."include/contacts/name_of_company.php"
+                            ); ?></div>
                         <p>
                         <a href="tel:+78003334410" title="" class="page__contact__text__phone">
                             <? $APPLICATION->IncludeFile(
@@ -25,11 +28,14 @@ $APPLICATION->SetTitle("Контакты");
                         <div class="page__contact__text__line"></div>
                         <br>
                         <div class="page__contact__text__title">
-                            Адрес производства:
+                            <? $APPLICATION->IncludeFile(
+                                SITE_DIR."include/contacts/adres_title.php"
+                            ); ?>
                         </div>
                         <div class="page__contact__text__green">
-                            Россия, Республика Дагестан,
-                            Касумкент, Ленина, 115
+                            <? $APPLICATION->IncludeFile(
+                                SITE_DIR."include/contacts/adres.php"
+                            ); ?>
                         </div>
                     </div>
     <!--                <div class="page__contact__img">-->
