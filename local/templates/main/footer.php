@@ -57,7 +57,7 @@
         </div>
         <div class="">
             <span class="footer-bottom-copyright col-xs-6 col-sm-6 col-md-6 col-lg-6"><? \WM\Components\IncludeArea::inc('', array('PATH' => SITE_DIR . 'include/bottom-text.php')); ?></span>
-            <span class="footer-bottom-dev col-xs-6 col-sm-6 col-md-6 col-lg-6"><? \WM\Components\IncludeArea::inc('', array('PATH' => SITE_DIR . 'include/developer.php')); ?></span><br><br>
+            <span class="footer-bottom-dev col-xs-6 col-sm-6 col-md-6 col-lg-6"><? \WM\Components\IncludeArea::inc('', array('PATH' => SITE_DIR . 'include/developer.php')); ?></span>
         </div>
     </div>
 </footer>
