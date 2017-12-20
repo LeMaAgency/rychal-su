@@ -767,13 +767,11 @@ body {
 
 .footer {
     margin-top: 30px;
-    padding-bottom: 20px;
     width: 100%;
     height: auto;
     background-image: url("../images/footer-bg-2.png");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .footer-item {
