@@ -60,7 +60,7 @@
             <span class="footer-bottom-dev col-xs-6 col-sm-6 col-md-6 col-lg-6"><? \WM\Components\IncludeArea::inc('', array('PATH' => SITE_DIR . 'include/developer.php')); ?></span>
         </div>
     </div>
-</footer>
+</footer><br><br>
 <div id="form_f">
 <form class="footer-form feedback-form" method="post" action="/ajax/feedback-order-form.php" class="feedback-form" >
     <div class="footer-form-item footer-form-phone form-group">
