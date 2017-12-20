@@ -57,10 +57,10 @@
         </div>
         <div class="">
             <span class="footer-bottom-copyright col-xs-6 col-sm-6 col-md-6 col-lg-6"><? \WM\Components\IncludeArea::inc('', array('PATH' => SITE_DIR . 'include/bottom-text.php')); ?></span>
-            <span class="footer-bottom-dev col-xs-6 col-sm-6 col-md-6 col-lg-6"><? \WM\Components\IncludeArea::inc('', array('PATH' => SITE_DIR . 'include/developer.php')); ?></span>
+            <span class="footer-bottom-dev col-xs-6 col-sm-6 col-md-6 col-lg-6"><? \WM\Components\IncludeArea::inc('', array('PATH' => SITE_DIR . 'include/developer.php')); ?></span><br><br>
         </div>
     </div>
-</footer><br><br>
+</footer>
 <div id="form_f">
 <form class="footer-form feedback-form" method="post" action="/ajax/feedback-order-form.php" class="feedback-form" >
     <div class="footer-form-item footer-form-phone form-group">
