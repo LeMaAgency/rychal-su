@@ -50,7 +50,8 @@
   margin: 118px auto 75px;
 }
 .about-descriptions {
-  min-height: 755px;
+	min-height: 450px;
+  /*min-height: 755px;*/
   background: url('../images/bg-text-about.png') no-repeat top;
   background-size: cover;
   font-size: 22px;

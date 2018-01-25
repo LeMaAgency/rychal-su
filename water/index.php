@@ -36,7 +36,7 @@ $APPLICATION->SetTitle("О воде");
         <div class="container">
             <h2 class="page__about__water__title">
                 <? $APPLICATION->IncludeFile(
-                    SITE_DIR."include/water/block2_title.php"
+                    SITE_DIR."include/water/block3_title.php"
                 ); ?>
             </h2>
             <div class="page__about__water__inf">

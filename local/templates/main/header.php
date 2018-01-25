@@ -42,7 +42,7 @@ Loc::loadMessages(__FILE__);
 <body>
 <?=$APPLICATION->ShowPanel();?>
 
-<header class="header header_bored-none">
+	<header class="header">
     <div class="container">
         <div class="header-contacts">
             <?\WM\Components\IncludeArea::inc('', array('PATH' => SITE_DIR . 'include/header-phone.php')); ?>
@@ -109,7 +109,30 @@ Loc::loadMessages(__FILE__);
     <div class="header-preview">
         <div class="header-preview-wrapper">
             <p class="header-preview-title">
-                <? \WM\Components\IncludeArea::inc('', array('PATH' => SITE_DIR . 'include/title-header.php')); ?></p>
+				<? 
+					if ($APPLICATION->GetCurDir() == SITE_DIR):
+						\WM\Components\IncludeArea::inc('', array('PATH' => SITE_DIR . 'include/title-header.php'));
+					else:
+						$APPLICATION->ShowTitle(false);
+					endif;
+				 ?>
+
+			</p>
         </div>
     </div>
+		<?
+			if ($APPLICATION->GetCurDir() !== SITE_DIR):
+				$APPLICATION->IncludeComponent(
+	"bitrix:breadcrumb", 
+	"breadcrumb", 
+	array(
+		"PATH" => "",
+		"SITE_ID" => "s1",
+		"START_FROM" => "0",
+		"COMPONENT_TEMPLATE" => "breadcrumb"
+	),
+	false
+);
+			endif;	
+			?>
 </header>

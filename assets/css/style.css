@@ -203,7 +203,7 @@ a:focus {
 
 .header-preview {
     margin-top: 100px;
-    margin-bottom: 150px;
+    /*margin-bottom: 150px;*/
     text-align: center;
     font-family: 'Circe', 'Arial', sans-serif;
     font-weight: normal;

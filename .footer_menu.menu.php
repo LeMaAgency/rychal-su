@@ -2,7 +2,7 @@
 $aMenuLinks = Array(
 	Array(
 		"О воде", 
-		"/water/", 
+		"/#", 
 		Array(), 
 		Array(), 
 		"" 
@@ -23,7 +23,7 @@ $aMenuLinks = Array(
 	),
 	Array(
 		"Контакты", 
-		"/contacnts/", 
+		"/contacts/", 
 		Array(), 
 		Array(), 
 		"" 

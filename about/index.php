@@ -4,7 +4,7 @@ $APPLICATION->SetTitle("О компании");
 ?><div class="content">
 	<div class="about-descriptions">
 		<div class="container">
-			<h2 class="h2"><?$APPLICATION->ShowTitle();?></h2>
+			<!--<h2 class="h2"><?$APPLICATION->ShowTitle();?></h2>-->
 			<p class="about-descriptions__text">
 				 <? $APPLICATION->IncludeFile(
                         SITE_DIR."include/about/about_company.php"
