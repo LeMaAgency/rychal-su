@@ -2,18 +2,27 @@
 	 "Рычал-Су" относится к маломинерализованным водам хлоридно-гидрокарбонатного натриевого состава. Она славится приятным мягким вкусом и доказанным лечебным эффектом.
 </p>
 <p style="text-align: left;">
+	 По степени минерализации 4…5 г/л, вода "Рычал-Су" относится к лечебно-столовым водам несмотря на это, вода подходит для ежедневного потребления.<br>
+</p>
+<p style="text-align: left;">
  <br>
 </p>
 <table align="center" cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
 <tbody>
 <tr>
 	<td colspan="4" style="background: white;">
+ <br>
 		<table cellspacing="0" cellpadding="0" style="border-collapse: collapse;">
 		<tbody>
 		<tr>
 			<td style="background: #e2efd9;">
 				<p align="center">
- <b><span style="color: #046a38;">Минерализация (г/л): 4,0-5,0 &nbsp; &nbsp; &nbsp; &nbsp;</span></b>
+ <b><span style="color: #046a38;">&nbsp; &nbsp;Химический состав (мг/л)</span></b>&nbsp; &nbsp; &nbsp;&nbsp;
+				</p>
+			</td>
+			<td style="background: #e2efd9;">
+				<p align="center">
+					 &nbsp;<b><span style="color: #046a38;">Минерализация (г/л): 4,0-5,0</span></b>&nbsp; &nbsp; &nbsp;&nbsp;
 				</p>
 			</td>
 			<td style="background: #e2efd9;">
@@ -23,12 +32,7 @@
 			</td>
 			<td style="background: #e2efd9;">
 				<p align="center">
- <b><span style="color: #046a38;">Минерализация (г/л): 4,0-5,0</span></b>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
-				</p>
-			</td>
-			<td style="background: #e2efd9;">
-				<p align="center">
- <b><span style="color: #046a38;">Химический состав (мг/л)</span></b>&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+ <b><span style="color: #046a38;">Минерализация (г/л): 4,0-5,0</span></b>&nbsp; &nbsp; &nbsp;&nbsp;
 				</p>
 			</td>
 		</tr>
@@ -105,9 +109,8 @@
 </tr>
 </tbody>
 </table>
- <br>
 <p style="text-align: left;">
-	 По степени минерализации 4…5 г/л, вода "Рычал-Су" относится к лечебно-столовым водам несмотря на это, вода подходит для ежедневного потребления.
+ <br>
 </p>
 <p>
 </p>
